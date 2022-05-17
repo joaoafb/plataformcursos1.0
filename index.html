@@ -1,0 +1,1618 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+     Plataform Cursos
+    </title>
+    <script src="https://kit.fontawesome.com/1b780029f6.js" crossorigin="anonymous"></script>
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+
+    <!-- ==== WOW JS ==== -->
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </head>
+  <body onload="checkaccount()">
+    <!-- ====== Navbar Section Start -->
+    <div
+      class="ud-header absolute top-0 left-0 z-40 flex w-full items-center bg-transparent"
+    >
+      <div class="container">
+        <div class="relative -mx-4 flex items-center justify-between">
+          <div class="w-60 max-w-full px-4">
+            <a href="index.html" class="navbar-logo block w-full py-5">
+              <img
+                style="width: 70px;"
+                src="assets/images/logo/logo.png"
+                alt="logo"
+                class="header-logo w-full"
+              />
+            </a>
+          </div>
+          <div class="flex w-full items-center justify-between px-4">
+            <div>
+              <button
+                id="navbarToggler"
+                class="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
+              >
+                <span
+                  class="relative my-[6px] block h-[2px] w-[30px] bg-white"
+                ></span>
+                <span
+                  class="relative my-[6px] block h-[2px] w-[30px] bg-white"
+                ></span>
+                <span
+                  class="relative my-[6px] block h-[2px] w-[30px] bg-white"
+                ></span>
+              </button>
+              <nav
+                id="navbarCollapse"
+                class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:px-4 lg:shadow-none xl:px-6"
+              >
+                <ul class="blcok lg:flex">
+                  <li class="group relative">
+                    <a
+                      href="#home"
+                      class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70"
+                    >
+                      Home
+                    </a>
+                  </li>
+                 
+                  <li class="group relative">
+                    <a
+                      href="#pricing"
+                      class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
+                    >
+                      Planos
+                    </a>
+                  </li>
+                 
+                  <li class="group relative">
+                    <a
+                      href="#contact"
+                      class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
+                    >
+                      Contato
+                    </a>
+                  </li>
+
+                  
+                  <li class="submenu-item group relative">
+                    <a
+                      href="javascript:void(0)"
+                      class="relative mx-8 flex py-2 text-base text-dark after:absolute after:right-1 after:top-1/2 after:mt-[-2px] after:h-2 after:w-2 after:-translate-y-1/2 after:rotate-45 after:border-b-2 after:border-r-2 after:border-current group-hover:text-primary lg:mr-0 lg:ml-8 lg:inline-flex lg:py-6 lg:pl-0 lg:pr-4 lg:text-white lg:after:right-0 lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
+                    >
+                      Categorias
+                    </a>
+                    <div
+                      class="submenu relative top-full left-0 hidden w-[250px] rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full"
+                    >
+                      <a
+                        href=""
+                        class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
+                      >
+                       Administração
+                      </a>
+                      <a
+                        href=""
+                        class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
+                      >
+                       Afiliados
+                      </a>
+                      <a
+                        href=""
+                        class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
+                      >
+                       Animação
+                      </a>
+                      <a
+                        href=""
+                        class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
+                      >
+                       Aplicativos
+                      </a>
+                      <a
+                        href=""
+                        class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
+                      >
+                      Apostas
+                      </a>
+                      <a
+                        href=""
+                        class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
+                      >
+                        Apostilas
+                      </a>
+                      <a
+                        href=""
+                        class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
+                      >
+                       Arquitetura
+                      </a>
+                      <a
+                        href=""
+                        class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
+                      >
+                      Banco de Dados
+                      </a>
+                      
+                    </div>
+                  </li>
+                  
+                  <!--DROP MINHA CONTA-->
+                  <li id="dropconta" class="submenu-item group relative">
+                    <a
+                      href="javascript:void(0)"
+                      class="relative mx-8 flex py-2 text-base text-dark after:absolute after:right-1 after:top-1/2 after:mt-[-2px] after:h-2 after:w-2 after:-translate-y-1/2 after:rotate-45 after:border-b-2 after:border-r-2 after:border-current group-hover:text-primary lg:mr-0 lg:ml-8 lg:inline-flex lg:py-6 lg:pl-0 lg:pr-4 lg:text-white lg:after:right-0 lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
+                    >
+                      Sua Conta
+                    </a>
+                    <div
+                      class="submenu relative top-full left-0 hidden w-[250px] rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full"
+                    >
+                      <a
+                      onclick="inforconta()"
+                        href="#inforconta"
+                        class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
+                      >
+                      <i class="fa-solid fa-circle-info"></i> Informações
+                      </a>
+                      <a
+                        href=""
+                        class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
+                      >
+                      <i class="fa-solid fa-graduation-cap"></i> Meus Cursos
+                      </a>
+                      <a
+                        href=""
+                        class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
+                      >
+                      <i class="fa-solid fa-basket-shopping"></i> Carrinho
+                      </a>
+                      <a
+                      onclick="meuplano()"
+                        href="#meuplano"
+                        class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
+                      >
+                      <i class="fas fa-wallet"></i>  Meu Plano
+                      </a>
+                      <a
+                      onclick="deslogar()"
+                        href="#deslogado"
+                        style="color: red;"
+                        class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
+                      >
+                      <i class="fas fa-sign-out"></i>  Sair Da Conta
+                      </a>
+                      
+                    
+                      
+                    </div>
+                  </li>
+
+
+                  <div style="margin-left: 15px;text-align: center;display:flex;justify-content: center;align-items: center; ">
+                    <span style="color: #ff7f00;" id="myname"></span>
+                    
+                  </div>
+                  
+                </ul>
+              </nav>
+            </div>
+            
+            <div
+            id="btnslogin"
+              class="hidden justify-end pr-16 sm:flex lg:pr-0">
+              <a
+                href="signin.html"
+                class="loginBtn py-3 px-7 text-base font-medium text-white hover:opacity-70"
+              >
+                Login
+              </a>
+              <a
+                href="signup.html"
+                class="signUpBtn rounded-lg bg-white bg-opacity-20 py-3 px-6 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark"
+              >
+               Cadastro
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ====== Navbar Section End -->
+
+    <!-- ====== Hero Section Start -->
+    <div
+    style="border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;"
+      id="home"
+      class="relative overflow-hidden bg-primary pt-[120px] md:pt-[130px] lg:pt-[160px]"
+    >
+      <div class="container">
+        <div class="-mx-4 flex flex-wrap items-center">
+          <div class="w-full px-4">
+            <div
+              class="hero-content wow fadeInUp mx-auto max-w-[780px] text-center"
+              data-wow-delay=".2s"
+            >
+              <h1
+              style="color: #ff7f00;"
+                class="mb-8 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug md:text-[45px] md:leading-snug"
+              >
+               Plataforma Cursos
+              </h1>
+              <p
+                class="mx-auto mb-10 max-w-[600px] text-base text-[#e4e4e4] sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed"
+              >
+                Aqui Você Encontrará Vários Cursos De Várias Categorias Com Player De Video Online Pelo Valor De Um HAMBURGUER!
+              </p>
+              <ul class="mb-10 flex flex-wrap items-center justify-center">
+                <li>
+                  <a style="background-color: #ff7f00;color:white;"
+                    href="cursos.html"
+                    class="inline-flex items-center justify-center rounded-lg bg-white py-4 px-6 text-center text-base font-medium text-dark transition duration-300 ease-in-out hover:text-primary hover:shadow-lg sm:px-10"
+                  >
+                  Ver Cursos
+                  </a>
+                </li>
+                <li>
+                  <a
+                  href="#pricing"
+                    
+                    class="flex items-center py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:opacity-70 sm:px-10"
+                  >
+                    Ver Planos
+                    <span class="pl-2">
+                      <svg
+                        width="20"
+                        height="8"
+                        viewBox="0 0 20 8"
+                        class="fill-current"
+                      >
+                        <path
+                          d="M19.2188 2.90632L17.0625 0.343819C16.875 0.125069 16.5312 0.0938193 16.2812 0.281319C16.0625 0.468819 16.0312 0.812569 16.2188 1.06257L18.25 3.46882H0.9375C0.625 3.46882 0.375 3.71882 0.375 4.03132C0.375 4.34382 0.625 4.59382 0.9375 4.59382H18.25L16.2188 7.00007C16.0312 7.21882 16.0625 7.56257 16.2812 7.78132C16.375 7.87507 16.5 7.90632 16.625 7.90632C16.7812 7.90632 16.9375 7.84382 17.0312 7.71882L19.1875 5.15632C19.75 4.46882 19.75 3.53132 19.2188 2.90632Z"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="w-full px-4">
+            <div
+              class="wow fadeInUp relative z-10 mx-auto max-w-[845px]"
+              data-wow-delay=".25s"
+            >
+              <div class="mt-16">
+                
+              </div>
+              <div class="absolute bottom-0 -left-9 z-[-1]">
+                <svg
+                  width="134"
+                  height="106"
+                  viewBox="0 0 134 106"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ====== Features Section Start -->
+    <section id="comofunciona" class="pt-20 pb-8 lg:pt-[120px] lg:pb-[70px]">
+      <div class="container">
+        <div class="-mx-4 flex flex-wrap">
+          <div class="w-full px-4">
+            <div class="mb-12 max-w-[620px] lg:mb-20">
+              <span class="mb-2 block text-lg font-semibold text-primary">
+                Como Funciona?
+              </span>
+             
+              <p
+                class="text-lg leading-relaxed text-body-color sm:text-xl sm:leading-relaxed"
+              >
+               Visando Facilitar a Apredizagem Para Todos, Disponibilizamentos Planos Mensais!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="-mx-4 flex flex-wrap">
+          <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+            <div class="wow fadeInUp group mb-12 bg-white" data-wow-delay=".1s">
+              <div
+                class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-primary"
+              >
+                <span
+                  class="absolute top-0 left-0 z-[-1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-2xl bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"
+                ></span>
+                <svg
+                  width="35"
+                  height="35"
+                  viewBox="0 0 52 52"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                <i id="icon" class="fa-solid fa-gift"></i>
+                </svg>
+              </div>
+              <h4 class="mb-3 text-xl font-bold text-dark">
+               Curso Gratis!
+              </h4>
+              <p class="mb-8 text-body-color lg:mb-11">
+              Ao Criar Sua Conta Pela Primeira Vez, Recebera De Presente Um Curso Totalmente Gratuito!
+              </p>
+             
+            </div>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+            <div
+              class="wow fadeInUp group mb-12 bg-white"
+              data-wow-delay=".15s"
+            >
+              <div
+                class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-primary"
+              >
+                <span
+                  class="absolute top-0 left-0 z-[-1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-2xl bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"
+                ></span>
+                <svg
+                  width="35"
+                  height="35"
+                  viewBox="0 0 52 52"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                <i id="icon" class="fa-solid fa-gifts"></i>
+                </svg>
+              </div>
+              <h4 class="mb-3 text-xl font-bold text-dark">
+              Sorteios Semanais
+              </h4>
+              <p class="mb-8 text-body-color lg:mb-11">
+                Teremos Tambem Semanalmente Sorteios De Cursos Para Todos Cadastrados
+              </p>
+              
+            </div>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+            <div class="wow fadeInUp group mb-12 bg-white" data-wow-delay=".2s">
+              <div
+                class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-primary"
+              >
+                <span
+                  class="absolute top-0 left-0 z-[-1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-2xl bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"
+                ></span>
+                <svg
+                  width="35"
+                  height="35"
+                  viewBox="0 0 35 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                <i id="icon"  class="fa-solid fa-clapperboard"></i>
+                </svg>
+              </div>
+              <h4 class="mb-3 text-xl font-bold text-dark">
+                Assista Online
+              </h4>
+              <p class="mb-8 text-body-color lg:mb-11">
+                Para Todos Os Cursos Teremos Player Próprio, Assista Quando e Onde Quiser!
+              </p>
+             
+            </div>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+            <div
+              class="wow fadeInUp group mb-12 bg-white"
+              data-wow-delay=".25s"
+            >
+              <div
+                class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-primary"
+              >
+                <span
+                  class="absolute top-0 left-0 z-[-1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-2xl bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"
+                ></span>
+                <svg
+                  width="35"
+                  height="35"
+                  viewBox="0 0 35 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                <i id="icon" class="fa-solid fa-user-group"></i>
+                </svg>
+              </div>
+              <h4 class="mb-3 text-xl font-bold text-dark">
+                Troque De Curso Com Amigos
+              </h4>
+              <p class="mb-8 text-body-color lg:mb-11">
+               Você Poderá Trocar De Curso Com Seu Amigo Quando Quiser
+              </p>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Features Section End -->
+
+   
+    <!-- ====== Pricing Section Start -->
+    <section
+      id="pricing"
+      class="relative z-20 overflow-hidden bg-white pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]"
+    >
+      <div class="container">
+        <div class="-mx-4 flex flex-wrap">
+          <div class="w-full px-4">
+            <div class="mx-auto mb-[60px] max-w-[620px] text-center lg:mb-20">
+              <span class="mb-2 block text-lg font-semibold text-primary">
+              Tabela De Preços
+              </span>
+              <h2
+                class="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[40px]"
+              >
+               Nossos Preços
+              </h2>
+              <p
+                class="text-lg leading-relaxed text-body-color sm:text-xl sm:leading-relaxed"
+              >
+                NÃO COBRAMOS PELOS CURSOS, SIM PELA HOSPEDAGEM E TAMBÉM PELO DESELVOLVIMENTO
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center">
+          <div class="w-full md:w-1/2 lg:w-1/3">
+            <div
+              class="wow fadeInUp relative z-10 mb-10 overflow-hidden rounded-xl border border-primary border-opacity-20 bg-white py-10 px-8 text-center shadow-pricing sm:p-12 lg:py-10 lg:px-6 xl:p-12"
+              data-wow-delay=".15s
+              "
+            >
+              <span
+                class="mb-2 block text-base font-medium uppercase text-dark"
+              >
+                START
+              </span>
+              <h2 class="mb-9 text-[28px] font-semibold text-primary">
+                R$ 9,90/mês
+              </h2>
+
+              <div class="mb-10">
+                <p
+                  class="mb-1 text-base font-medium leading-loose text-body-color"
+                >
+                 Suporte Quando Precisar
+                </p>
+                <p
+                  class="mb-1 text-base font-medium leading-loose text-body-color"
+                >
+                Até 2 Cursos
+                </p>
+                <p
+                  class="mb-1 text-base font-medium leading-loose text-body-color"
+                >
+                  Assista Quando Quiser
+                </p>
+                <p
+                  class="mb-1 text-base font-medium leading-loose text-body-color"
+                >
+                  Sorteios Semanais
+                </p>
+
+                <p
+                class="mb-1 text-base font-medium leading-loose text-body-color"
+              >
+               Acesso ao Nosso Discord (TAG:START)
+              </p>
+               
+              </div>
+              <div class="w-full">
+                <a
+                target="_blank"
+                  href="
+                  https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c93808480b3498d0180b5da5e010141
+                  "
+                  class="inline-block rounded-full border border-[#D4DEFF] bg-transparent py-4 px-11 text-center text-base font-medium text-primary transition duration-300 ease-in-out hover:border-primary hover:bg-primary hover:text-white"
+                >
+                  Adquirir Plano
+                </a>
+              </div>
+              <span
+                class="absolute left-0 bottom-0 z-[-1] block h-14 w-14 rounded-tr-full bg-primary"
+              >
+              </span>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/3">
+            <div
+              class="wow fadeInUp relative z-10 mb-10 overflow-hidden rounded-xl bg-primary bg-gradient-to-b from-primary to-[#179BEE] py-10 px-8 text-center shadow-pricing sm:p-12 lg:py-10 lg:px-6 xl:p-12"
+              data-wow-delay=".1s
+              "
+            >
+              <span
+                class="mb-5 inline-block rounded-full border border-white bg-white py-2 px-6 text-base font-semibold uppercase text-primary"
+              >
+                PRO
+              </span>
+              <span
+                class="mb-2 block text-base font-medium uppercase text-white"
+              >
+                PLANO MAIS COMPLETO
+              </span>
+              <h2 class="mb-9 text-[28px] font-semibold text-white">
+                R$19.90/mês
+              </h2>
+
+              <div class="mb-10">
+                <p class="mb-1 text-base font-medium leading-loose text-white">
+                  3 Usuarios Diferentes
+                </p>
+                <p class="mb-1 text-base font-medium leading-loose text-white">
+                 8 Cursos
+                </p>
+                <p class="mb-1 text-base font-medium leading-loose text-white">
+                  Assita Quando Quiser
+                </p>
+                <p class="mb-1 text-base font-medium leading-loose text-white">
+                  Sorteios Semanais
+                </p>
+                <p class="mb-1 text-base font-medium leading-loose text-white">
+                  Troque De Curso Com Usuarios
+                </p>
+                <p class="mb-1 text-base font-medium leading-loose text-white">
+              
+               Acesso ao Nosso Discord (TAG:PRO)
+              </p>
+                <p class="mb-1 text-base font-medium leading-loose text-white">
+                 Suporte Quando Precisar
+                </p>
+              </div>
+              <div class="w-full">
+                <a
+                target="_blank"
+                  href="
+                  https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c93808480b349ae0180b5dbd29b012b
+                  "
+                  class="inline-block rounded-full border border-white bg-white py-4 px-11 text-center text-base font-medium text-dark transition duration-300 ease-in-out hover:border-dark hover:bg-dark hover:text-white"
+                >
+                  Adquirir Plano
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/3">
+            <div
+              class="wow fadeInUp relative z-10 mb-10 overflow-hidden rounded-xl border border-primary border-opacity-20 bg-white py-10 px-8 text-center shadow-pricing sm:p-12 lg:py-10 lg:px-6 xl:p-12"
+              data-wow-delay=".15s
+              "
+            >
+              <span
+                class="mb-2 block text-base font-medium uppercase text-dark"
+              >
+                ADVANCED
+              </span>
+              <h2 class="mb-9 text-[28px] font-semibold text-primary">
+                R$14.90/mo
+              </h2>
+
+              <div class="mb-10">
+                <p
+                  class="mb-1 text-base font-medium leading-loose text-body-color"
+                >
+                  2 Usuaris Diferentes
+                </p>
+                <p
+                  class="mb-1 text-base font-medium leading-loose text-body-color"
+                >
+                  4 Cursos
+                </p>
+                <p
+                  class="mb-1 text-base font-medium leading-loose text-body-color"
+                >
+              Assista Quando Quiser
+                </p>
+                <p
+                  class="mb-1 text-base font-medium leading-loose text-body-color"
+                >
+                Sorteios Semanais
+                </p>
+                <p
+                  class="mb-1 text-base font-medium leading-loose text-body-color"
+                >
+                
+                Acesso ao Nosso Discord(TAG: ADVANCED)
+                </p>
+                <p
+                  class="mb-1 text-base font-medium leading-loose text-body-color"
+                >
+                 Suporte Quando Precisar
+                </p>
+              </div>
+              <div class="w-full">
+                <a
+                target="_blank"
+                  href="
+                  https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c93808480b349cd0180b5db3b4e0124
+                  "
+                  class="inline-block rounded-full border border-[#D4DEFF] bg-transparent py-4 px-11 text-center text-base font-medium text-primary transition duration-300 ease-in-out hover:border-primary hover:bg-primary hover:text-white"
+                >
+                 Adquirir Plano
+                </a>
+              </div>
+
+              <span
+                class="absolute right-0 top-0 z-[-1] block h-14 w-14 rounded-bl-full bg-secondary"
+              >
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Pricing Section End -->
+
+
+
+    <!-- ====== Testimonials Start ====== -->
+    <section id="testimonials" class="pt-20 md:pt-[120px]">
+      <div class="container px-4">
+        <div class="flex flex-wrap">
+          <div class="mx-4 w-full">
+            <div class="mx-auto mb-[60px] max-w-[620px] text-center lg:mb-20">
+              <span class="mb-2 block text-lg font-semibold text-primary">
+                Provas Sociais
+              </span>
+              <h2
+                class="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[42px]"
+              >
+             O Que Nossos Primeiros Clientes Dizem?
+              </h2>
+             
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div
+              class="ud-single-testimonial wow fadeInUp mb-12 bg-white p-8 shadow-testimonial"
+              data-wow-delay=".1s
+              "
+            >
+              <div class="ud-testimonial-ratings mb-3 flex items-center">
+                <span class="mr-1 text-[#fbb040]">
+                  <svg
+                    width="18"
+                    height="16"
+                    viewBox="0 0 18 16"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M9.09815 0.360596L11.1054 6.06493H17.601L12.3459 9.5904L14.3532 15.2947L9.09815 11.7693L3.84309 15.2947L5.85035 9.5904L0.595291 6.06493H7.0909L9.09815 0.360596Z"
+                    />
+                  </svg>
+                </span>
+                <span class="mr-1 text-[#fbb040]">
+                  <svg
+                    width="18"
+                    height="16"
+                    viewBox="0 0 18 16"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M9.09815 0.360596L11.1054 6.06493H17.601L12.3459 9.5904L14.3532 15.2947L9.09815 11.7693L3.84309 15.2947L5.85035 9.5904L0.595291 6.06493H7.0909L9.09815 0.360596Z"
+                    />
+                  </svg>
+                </span>
+                <span class="mr-1 text-[#fbb040]">
+                  <svg
+                    width="18"
+                    height="16"
+                    viewBox="0 0 18 16"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M9.09815 0.360596L11.1054 6.06493H17.601L12.3459 9.5904L14.3532 15.2947L9.09815 11.7693L3.84309 15.2947L5.85035 9.5904L0.595291 6.06493H7.0909L9.09815 0.360596Z"
+                    />
+                  </svg>
+                </span>
+                <span class="mr-1 text-[#fbb040]">
+                  <svg
+                    width="18"
+                    height="16"
+                    viewBox="0 0 18 16"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M9.09815 0.360596L11.1054 6.06493H17.601L12.3459 9.5904L14.3532 15.2947L9.09815 11.7693L3.84309 15.2947L5.85035 9.5904L0.595291 6.06493H7.0909L9.09815 0.360596Z"
+                    />
+                  </svg>
+                </span>
+                <span class="mr-1 text-[#fbb040]">
+                  <svg
+                    width="18"
+                    height="16"
+                    viewBox="0 0 18 16"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M9.09815 0.360596L11.1054 6.06493H17.601L12.3459 9.5904L14.3532 15.2947L9.09815 11.7693L3.84309 15.2947L5.85035 9.5904L0.595291 6.06493H7.0909L9.09815 0.360596Z"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div class="ud-testimonial-content mb-6">
+                <p class="text-base tracking-wide text-body-color">
+                  “Cara, essa plataforma veio para me salvar! Vários Cursos Baratos e um site magnifico
+                </p>
+              </div>
+              <div class="ud-testimonial-info flex items-center">
+                <div
+                  class="ud-testimonial-image mr-5 h-[50px] w-[50px] overflow-hidden rounded-full"
+                >
+                  <img
+                    src="assets/images/testimonials/author-01.png"
+                    alt="author"
+                  />
+                </div>
+                <div class="ud-testimonial-meta">
+                  <h4 class="text-sm font-semibold">Joaquim Francisco</h4>
+                  <p class="text-xs text-[#969696]">Instagram @joaquim</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div
+              class="ud-single-testimonial wow fadeInUp mb-12 bg-white p-8 shadow-testimonial"
+              data-wow-delay=".15s
+              "
+            >
+              <div class="ud-testimonial-ratings mb-3 flex items-center">
+                <span class="mr-1 text-[#fbb040]">
+                  <svg
+                    width="18"
+                    height="16"
+                    viewBox="0 0 18 16"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M9.09815 0.360596L11.1054 6.06493H17.601L12.3459 9.5904L14.3532 15.2947L9.09815 11.7693L3.84309 15.2947L5.85035 9.5904L0.595291 6.06493H7.0909L9.09815 0.360596Z"
+                    />
+                  </svg>
+                </span>
+                <span class="mr-1 text-[#fbb040]">
+                  <svg
+                    width="18"
+                    height="16"
+                    viewBox="0 0 18 16"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M9.09815 0.360596L11.1054 6.06493H17.601L12.3459 9.5904L14.3532 15.2947L9.09815 11.7693L3.84309 15.2947L5.85035 9.5904L0.595291 6.06493H7.0909L9.09815 0.360596Z"
+                    />
+                  </svg>
+                </span>
+                <span class="mr-1 text-[#fbb040]">
+                  <svg
+                    width="18"
+                    height="16"
+                    viewBox="0 0 18 16"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M9.09815 0.360596L11.1054 6.06493H17.601L12.3459 9.5904L14.3532 15.2947L9.09815 11.7693L3.84309 15.2947L5.85035 9.5904L0.595291 6.06493H7.0909L9.09815 0.360596Z"
+                    />
+                  </svg>
+                </span>
+                <span class="mr-1 text-[#fbb040]">
+                  <svg
+                    width="18"
+                    height="16"
+                    viewBox="0 0 18 16"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M9.09815 0.360596L11.1054 6.06493H17.601L12.3459 9.5904L14.3532 15.2947L9.09815 11.7693L3.84309 15.2947L5.85035 9.5904L0.595291 6.06493H7.0909L9.09815 0.360596Z"
+                    />
+                  </svg>
+                </span>
+                <span class="mr-1 text-[#fbb040]">
+                  <svg
+                    width="18"
+                    height="16"
+                    viewBox="0 0 18 16"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M9.09815 0.360596L11.1054 6.06493H17.601L12.3459 9.5904L14.3532 15.2947L9.09815 11.7693L3.84309 15.2947L5.85035 9.5904L0.595291 6.06493H7.0909L9.09815 0.360596Z"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div class="ud-testimonial-content mb-6">
+                <p class="text-base tracking-wide text-body-color">
+                  “Que Plataforma toop galera, nunca foi tão facil aprender novas coisas!
+                </p>
+              </div>
+              <div class="ud-testimonial-info flex items-center">
+                <div
+                  class="ud-testimonial-image mr-5 h-[50px] w-[50px] overflow-hidden rounded-full"
+                >
+                  <img
+                    src="assets/images/testimonials/author-02.png"
+                    alt="author"
+                  />
+                </div>
+                <div class="ud-testimonial-meta">
+                  <h4 class="text-sm font-semibold">Pablo Rian</h4>
+                  <p class="text-xs text-[#969696]">Instagram @pablorian</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div
+              class="ud-single-testimonial wow fadeInUp mb-12 bg-white p-8 shadow-testimonial"
+              data-wow-delay=".2s
+              "
+            >
+              <div class="ud-testimonial-ratings mb-3 flex items-center">
+                <span class="mr-1 text-[#fbb040]">
+                  <svg
+                    width="18"
+                    height="16"
+                    viewBox="0 0 18 16"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M9.09815 0.360596L11.1054 6.06493H17.601L12.3459 9.5904L14.3532 15.2947L9.09815 11.7693L3.84309 15.2947L5.85035 9.5904L0.595291 6.06493H7.0909L9.09815 0.360596Z"
+                    />
+                  </svg>
+                </span>
+                <span class="mr-1 text-[#fbb040]">
+                  <svg
+                    width="18"
+                    height="16"
+                    viewBox="0 0 18 16"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M9.09815 0.360596L11.1054 6.06493H17.601L12.3459 9.5904L14.3532 15.2947L9.09815 11.7693L3.84309 15.2947L5.85035 9.5904L0.595291 6.06493H7.0909L9.09815 0.360596Z"
+                    />
+                  </svg>
+                </span>
+                <span class="mr-1 text-[#fbb040]">
+                  <svg
+                    width="18"
+                    height="16"
+                    viewBox="0 0 18 16"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M9.09815 0.360596L11.1054 6.06493H17.601L12.3459 9.5904L14.3532 15.2947L9.09815 11.7693L3.84309 15.2947L5.85035 9.5904L0.595291 6.06493H7.0909L9.09815 0.360596Z"
+                    />
+                  </svg>
+                </span>
+                <span class="mr-1 text-[#fbb040]">
+                  <svg
+                    width="18"
+                    height="16"
+                    viewBox="0 0 18 16"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M9.09815 0.360596L11.1054 6.06493H17.601L12.3459 9.5904L14.3532 15.2947L9.09815 11.7693L3.84309 15.2947L5.85035 9.5904L0.595291 6.06493H7.0909L9.09815 0.360596Z"
+                    />
+                  </svg>
+                </span>
+                <span class="mr-1 text-[#fbb040]">
+                  <svg
+                    width="18"
+                    height="16"
+                    viewBox="0 0 18 16"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M9.09815 0.360596L11.1054 6.06493H17.601L12.3459 9.5904L14.3532 15.2947L9.09815 11.7693L3.84309 15.2947L5.85035 9.5904L0.595291 6.06493H7.0909L9.09815 0.360596Z"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div class="ud-testimonial-content mb-6">
+                <p class="text-base tracking-wide text-body-color">
+                  “Por que não achei essa plataforma antes em? Sou grato a todos os desenvolvedores!
+                </p>
+              </div>
+              <div class="ud-testimonial-info flex items-center">
+                <div
+                  class="ud-testimonial-image mr-5 h-[50px] w-[50px] overflow-hidden rounded-full"
+                >
+                  <img
+                    src="assets/images/testimonials/author-03.png"
+                    alt="author"
+                  />
+                </div>
+                <div class="ud-testimonial-meta">
+                  <h4 class="text-sm font-semibold">Robson Silva</h4>
+                  <p class="text-xs text-[#969696]">Instagram @robson</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Testimonials End ====== -->
+
+    <!-- ====== Team Section Start -->
+    <section id="team" class="pt-20 pb-10 lg:pt-[120px] lg:pb-20">
+      <div class="container">
+        <div class="-mx-4 flex flex-wrap">
+          <div class="w-full px-4">
+            <div class="mx-auto mb-[60px] max-w-[620px] text-center">
+              <span class="mb-2 block text-lg font-semibold text-primary">
+               Nosso Time
+              </span>
+              <h2
+                class="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[42px]"
+              >
+              Conheça nosso time
+              </h2>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="-mx-4 flex flex-wrap justify-center">
+          <div class="w-full px-4 sm:w-1/2 lg:w-1/4">
+            <div class="wow fadeInUp mb-10" data-wow-delay=".1s">
+              <div
+                class="h-170px] relative z-10 mx-auto mb-6 w-[170px] rounded-full"
+              >
+                <img
+                  src="assets/images/team/team-01.png"
+                  alt="image"
+                  class="w-full rounded-full"
+                />
+                <span class="absolute top-0 left-0 z-[-1]">
+                
+                </span>
+                <span class="absolute right-0 bottom-0">
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21.5 21.5L0.505701 21.5C0.767606 10.023 10.023 0.767604 21.5 0.505697L21.5 21.5Z"
+                      stroke="#13C296"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div class="text-center">
+                <h4 class="mb-2 text-lg font-medium text-dark">
+                 João Vitor Alves
+                </h4>
+                <p class="mb-5 text-sm font-medium text-body-color">
+                  Dono e Programador
+                </p>
+                <div class="flex items-center justify-center">
+                  <a
+                    href="javascript:void(0)"
+                    class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
+                  >
+                    <svg
+                      width="10"
+                      height="18"
+                      viewBox="0 0 10 18"
+                      class="fill-current"
+                    >
+                      <path
+                        d="M9.29878 7.2H7.74898H7.19548V6.61935V4.81936V4.23871H7.74898H8.91133C9.21575 4.23871 9.46483 4.00645 9.46483 3.65806V0.580645C9.46483 0.26129 9.24343 0 8.91133 0H6.89106C4.70474 0 3.18262 1.62581 3.18262 4.03548V6.56129V7.14194H2.62912H0.747223C0.359774 7.14194 0 7.46129 0 7.92581V10.0161C0 10.4226 0.304424 10.8 0.747223 10.8H2.57377H3.12727V11.3806V17.2161C3.12727 17.6226 3.43169 18 3.87449 18H6.47593C6.64198 18 6.78036 17.9129 6.89106 17.7968C7.00176 17.6806 7.08478 17.4774 7.08478 17.3032V11.4097V10.829H7.66596H8.91133C9.2711 10.829 9.54785 10.5968 9.6032 10.2484V10.2194V10.1903L9.99065 8.1871C10.0183 7.98387 9.99065 7.75161 9.8246 7.51935C9.76925 7.37419 9.52018 7.22903 9.29878 7.2Z"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
+                  >
+                    <svg
+                      width="18"
+                      height="14"
+                      viewBox="0 0 18 14"
+                      class="fill-current"
+                    >
+                      <path
+                        d="M15.9968 2.41096L17.1 1.09589C17.4194 0.739726 17.5065 0.465753 17.5355 0.328767C16.6645 0.821918 15.8516 0.986301 15.329 0.986301H15.1258L15.0097 0.876712C14.3129 0.30137 13.4419 0 12.5129 0C10.4806 0 8.88387 1.58904 8.88387 3.42466C8.88387 3.53425 8.88387 3.69863 8.9129 3.80822L9 4.35616L8.39032 4.32877C4.67419 4.21918 1.62581 1.20548 1.13226 0.684932C0.319355 2.05479 0.783871 3.36986 1.27742 4.19178L2.26452 5.72603L0.696774 4.90411C0.725806 6.05479 1.19032 6.9589 2.09032 7.61644L2.87419 8.16438L2.09032 8.46575C2.58387 9.86301 3.6871 10.4384 4.5 10.6575L5.57419 10.9315L4.55806 11.589C2.93226 12.6849 0.9 12.6027 0 12.5205C1.82903 13.726 4.00645 14 5.51613 14C6.64839 14 7.49032 13.8904 7.69355 13.8082C15.8226 12 16.2 5.15068 16.2 3.78082V3.58904L16.3742 3.47945C17.3613 2.60274 17.7677 2.13699 18 1.86301C17.9129 1.89041 17.7968 1.94521 17.6806 1.9726L15.9968 2.41096Z"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
+                  >
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      class="fill-current"
+                    >
+                      <path
+                        d="M8.90245 12.1939C10.7363 12.1939 12.2229 10.7073 12.2229 8.87352C12.2229 7.0397 10.7363 5.5531 8.90245 5.5531C7.06863 5.5531 5.58203 7.0397 5.58203 8.87352C5.58203 10.7073 7.06863 12.1939 8.90245 12.1939Z"
+                      />
+                      <path
+                        d="M12.5088 0H5.23824C2.34719 0 0 2.34719 0 5.23824V12.4516C0 15.3999 2.34719 17.7471 5.23824 17.7471H12.4516C15.3999 17.7471 17.7471 15.3999 17.7471 12.5088V5.23824C17.7471 2.34719 15.3999 0 12.5088 0ZM8.90215 13.2244C6.46909 13.2244 4.55126 11.2493 4.55126 8.87353C4.55126 6.49771 6.49771 4.52264 8.90215 4.52264C11.278 4.52264 13.2244 6.49771 13.2244 8.87353C13.2244 11.2493 11.3066 13.2244 8.90215 13.2244ZM14.9133 4.92338C14.627 5.23824 14.1976 5.40999 13.711 5.40999C13.2817 5.40999 12.8523 5.23824 12.5088 4.92338C12.1939 4.60851 12.0222 4.20777 12.0222 3.72116C12.0222 3.23454 12.1939 2.86243 12.5088 2.51894C12.8237 2.17545 13.2244 2.0037 13.711 2.0037C14.1404 2.0037 14.5984 2.17545 14.9133 2.49031C15.1995 2.86243 15.3999 3.29179 15.3999 3.74978C15.3712 4.20777 15.1995 4.60851 14.9133 4.92338Z"
+                      />
+                      <path
+                        d="M13.7397 3.03418C13.3676 3.03418 13.0527 3.34905 13.0527 3.72116C13.0527 4.09328 13.3676 4.40815 13.7397 4.40815C14.1118 4.40815 14.4267 4.09328 14.4267 3.72116C14.4267 3.34905 14.1405 3.03418 13.7397 3.03418Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 sm:w-1/2 lg:w-1/4">
+            <div class="wow fadeInUp mb-10" data-wow-delay=".15s">
+              <div
+                class="h-170px] relative z-10 mx-auto mb-6 w-[170px] rounded-full"
+              >
+                <img
+                  src="assets/images/team/team-02.png"
+                  alt="image"
+                  class="w-full rounded-full"
+                />
+                <span class="absolute top-0 left-0 z-[-1]">
+                
+                </span>
+                <span class="absolute right-0 bottom-0">
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21.5 21.5L0.505701 21.5C0.767606 10.023 10.023 0.767604 21.5 0.505697L21.5 21.5Z"
+                      stroke="#13C296"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div class="text-center">
+                <h4 class="mb-2 text-lg font-medium text-dark">Joaquim Francisco</h4>
+                <p class="mb-5 text-sm font-medium text-body-color">
+                  Suporte Plataforma
+                </p>
+                <div class="flex items-center justify-center">
+                  <a
+                    href="javascript:void(0)"
+                    class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
+                  >
+                    <svg
+                      width="10"
+                      height="18"
+                      viewBox="0 0 10 18"
+                      class="fill-current"
+                    >
+                      <path
+                        d="M9.29878 7.2H7.74898H7.19548V6.61935V4.81936V4.23871H7.74898H8.91133C9.21575 4.23871 9.46483 4.00645 9.46483 3.65806V0.580645C9.46483 0.26129 9.24343 0 8.91133 0H6.89106C4.70474 0 3.18262 1.62581 3.18262 4.03548V6.56129V7.14194H2.62912H0.747223C0.359774 7.14194 0 7.46129 0 7.92581V10.0161C0 10.4226 0.304424 10.8 0.747223 10.8H2.57377H3.12727V11.3806V17.2161C3.12727 17.6226 3.43169 18 3.87449 18H6.47593C6.64198 18 6.78036 17.9129 6.89106 17.7968C7.00176 17.6806 7.08478 17.4774 7.08478 17.3032V11.4097V10.829H7.66596H8.91133C9.2711 10.829 9.54785 10.5968 9.6032 10.2484V10.2194V10.1903L9.99065 8.1871C10.0183 7.98387 9.99065 7.75161 9.8246 7.51935C9.76925 7.37419 9.52018 7.22903 9.29878 7.2Z"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
+                  >
+                    <svg
+                      width="18"
+                      height="14"
+                      viewBox="0 0 18 14"
+                      class="fill-current"
+                    >
+                      <path
+                        d="M15.9968 2.41096L17.1 1.09589C17.4194 0.739726 17.5065 0.465753 17.5355 0.328767C16.6645 0.821918 15.8516 0.986301 15.329 0.986301H15.1258L15.0097 0.876712C14.3129 0.30137 13.4419 0 12.5129 0C10.4806 0 8.88387 1.58904 8.88387 3.42466C8.88387 3.53425 8.88387 3.69863 8.9129 3.80822L9 4.35616L8.39032 4.32877C4.67419 4.21918 1.62581 1.20548 1.13226 0.684932C0.319355 2.05479 0.783871 3.36986 1.27742 4.19178L2.26452 5.72603L0.696774 4.90411C0.725806 6.05479 1.19032 6.9589 2.09032 7.61644L2.87419 8.16438L2.09032 8.46575C2.58387 9.86301 3.6871 10.4384 4.5 10.6575L5.57419 10.9315L4.55806 11.589C2.93226 12.6849 0.9 12.6027 0 12.5205C1.82903 13.726 4.00645 14 5.51613 14C6.64839 14 7.49032 13.8904 7.69355 13.8082C15.8226 12 16.2 5.15068 16.2 3.78082V3.58904L16.3742 3.47945C17.3613 2.60274 17.7677 2.13699 18 1.86301C17.9129 1.89041 17.7968 1.94521 17.6806 1.9726L15.9968 2.41096Z"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
+                  >
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      class="fill-current"
+                    >
+                      <path
+                        d="M8.90245 12.1939C10.7363 12.1939 12.2229 10.7073 12.2229 8.87352C12.2229 7.0397 10.7363 5.5531 8.90245 5.5531C7.06863 5.5531 5.58203 7.0397 5.58203 8.87352C5.58203 10.7073 7.06863 12.1939 8.90245 12.1939Z"
+                      />
+                      <path
+                        d="M12.5088 0H5.23824C2.34719 0 0 2.34719 0 5.23824V12.4516C0 15.3999 2.34719 17.7471 5.23824 17.7471H12.4516C15.3999 17.7471 17.7471 15.3999 17.7471 12.5088V5.23824C17.7471 2.34719 15.3999 0 12.5088 0ZM8.90215 13.2244C6.46909 13.2244 4.55126 11.2493 4.55126 8.87353C4.55126 6.49771 6.49771 4.52264 8.90215 4.52264C11.278 4.52264 13.2244 6.49771 13.2244 8.87353C13.2244 11.2493 11.3066 13.2244 8.90215 13.2244ZM14.9133 4.92338C14.627 5.23824 14.1976 5.40999 13.711 5.40999C13.2817 5.40999 12.8523 5.23824 12.5088 4.92338C12.1939 4.60851 12.0222 4.20777 12.0222 3.72116C12.0222 3.23454 12.1939 2.86243 12.5088 2.51894C12.8237 2.17545 13.2244 2.0037 13.711 2.0037C14.1404 2.0037 14.5984 2.17545 14.9133 2.49031C15.1995 2.86243 15.3999 3.29179 15.3999 3.74978C15.3712 4.20777 15.1995 4.60851 14.9133 4.92338Z"
+                      />
+                      <path
+                        d="M13.7397 3.03418C13.3676 3.03418 13.0527 3.34905 13.0527 3.72116C13.0527 4.09328 13.3676 4.40815 13.7397 4.40815C14.1118 4.40815 14.4267 4.09328 14.4267 3.72116C14.4267 3.34905 14.1405 3.03418 13.7397 3.03418Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 sm:w-1/2 lg:w-1/4">
+            <div class="wow fadeInUp mb-10" data-wow-delay=".2s">
+              <div
+                class="h-170px] relative z-10 mx-auto mb-6 w-[170px] rounded-full"
+              >
+                <img
+                  src="assets/images/team/team-03.png"
+                  alt="image"
+                  class="w-full rounded-full"
+                />
+                <span class="absolute top-0 left-0 z-[-1]">
+                
+                </span>
+                <span class="absolute right-0 bottom-0">
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21.5 21.5L0.505701 21.5C0.767606 10.023 10.023 0.767604 21.5 0.505697L21.5 21.5Z"
+                      stroke="#13C296"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div class="text-center">
+                <h4 class="mb-2 text-lg font-medium text-dark">
+                  Pablo Rian
+                </h4>
+                <p class="mb-5 text-sm font-medium text-body-color">
+                  Suporte Plataforma e Discord
+                </p>
+                <div class="flex items-center justify-center">
+                  <a
+                    href="javascript:void(0)"
+                    class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
+                  >
+                    <svg
+                      width="10"
+                      height="18"
+                      viewBox="0 0 10 18"
+                      class="fill-current"
+                    >
+                      <path
+                        d="M9.29878 7.2H7.74898H7.19548V6.61935V4.81936V4.23871H7.74898H8.91133C9.21575 4.23871 9.46483 4.00645 9.46483 3.65806V0.580645C9.46483 0.26129 9.24343 0 8.91133 0H6.89106C4.70474 0 3.18262 1.62581 3.18262 4.03548V6.56129V7.14194H2.62912H0.747223C0.359774 7.14194 0 7.46129 0 7.92581V10.0161C0 10.4226 0.304424 10.8 0.747223 10.8H2.57377H3.12727V11.3806V17.2161C3.12727 17.6226 3.43169 18 3.87449 18H6.47593C6.64198 18 6.78036 17.9129 6.89106 17.7968C7.00176 17.6806 7.08478 17.4774 7.08478 17.3032V11.4097V10.829H7.66596H8.91133C9.2711 10.829 9.54785 10.5968 9.6032 10.2484V10.2194V10.1903L9.99065 8.1871C10.0183 7.98387 9.99065 7.75161 9.8246 7.51935C9.76925 7.37419 9.52018 7.22903 9.29878 7.2Z"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
+                  >
+                    <svg
+                      width="18"
+                      height="14"
+                      viewBox="0 0 18 14"
+                      class="fill-current"
+                    >
+                      <path
+                        d="M15.9968 2.41096L17.1 1.09589C17.4194 0.739726 17.5065 0.465753 17.5355 0.328767C16.6645 0.821918 15.8516 0.986301 15.329 0.986301H15.1258L15.0097 0.876712C14.3129 0.30137 13.4419 0 12.5129 0C10.4806 0 8.88387 1.58904 8.88387 3.42466C8.88387 3.53425 8.88387 3.69863 8.9129 3.80822L9 4.35616L8.39032 4.32877C4.67419 4.21918 1.62581 1.20548 1.13226 0.684932C0.319355 2.05479 0.783871 3.36986 1.27742 4.19178L2.26452 5.72603L0.696774 4.90411C0.725806 6.05479 1.19032 6.9589 2.09032 7.61644L2.87419 8.16438L2.09032 8.46575C2.58387 9.86301 3.6871 10.4384 4.5 10.6575L5.57419 10.9315L4.55806 11.589C2.93226 12.6849 0.9 12.6027 0 12.5205C1.82903 13.726 4.00645 14 5.51613 14C6.64839 14 7.49032 13.8904 7.69355 13.8082C15.8226 12 16.2 5.15068 16.2 3.78082V3.58904L16.3742 3.47945C17.3613 2.60274 17.7677 2.13699 18 1.86301C17.9129 1.89041 17.7968 1.94521 17.6806 1.9726L15.9968 2.41096Z"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
+                  >
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      class="fill-current"
+                    >
+                      <path
+                        d="M8.90245 12.1939C10.7363 12.1939 12.2229 10.7073 12.2229 8.87352C12.2229 7.0397 10.7363 5.5531 8.90245 5.5531C7.06863 5.5531 5.58203 7.0397 5.58203 8.87352C5.58203 10.7073 7.06863 12.1939 8.90245 12.1939Z"
+                      />
+                      <path
+                        d="M12.5088 0H5.23824C2.34719 0 0 2.34719 0 5.23824V12.4516C0 15.3999 2.34719 17.7471 5.23824 17.7471H12.4516C15.3999 17.7471 17.7471 15.3999 17.7471 12.5088V5.23824C17.7471 2.34719 15.3999 0 12.5088 0ZM8.90215 13.2244C6.46909 13.2244 4.55126 11.2493 4.55126 8.87353C4.55126 6.49771 6.49771 4.52264 8.90215 4.52264C11.278 4.52264 13.2244 6.49771 13.2244 8.87353C13.2244 11.2493 11.3066 13.2244 8.90215 13.2244ZM14.9133 4.92338C14.627 5.23824 14.1976 5.40999 13.711 5.40999C13.2817 5.40999 12.8523 5.23824 12.5088 4.92338C12.1939 4.60851 12.0222 4.20777 12.0222 3.72116C12.0222 3.23454 12.1939 2.86243 12.5088 2.51894C12.8237 2.17545 13.2244 2.0037 13.711 2.0037C14.1404 2.0037 14.5984 2.17545 14.9133 2.49031C15.1995 2.86243 15.3999 3.29179 15.3999 3.74978C15.3712 4.20777 15.1995 4.60851 14.9133 4.92338Z"
+                      />
+                      <path
+                        d="M13.7397 3.03418C13.3676 3.03418 13.0527 3.34905 13.0527 3.72116C13.0527 4.09328 13.3676 4.40815 13.7397 4.40815C14.1118 4.40815 14.4267 4.09328 14.4267 3.72116C14.4267 3.34905 14.1405 3.03418 13.7397 3.03418Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 sm:w-1/2 lg:w-1/4">
+            <div class="wow fadeInUp mb-10" data-wow-delay=".25s">
+              <div
+                class="h-170px] relative z-10 mx-auto mb-6 w-[170px] rounded-full"
+              >
+                <img
+                  src="assets/images/team/team-01.png"
+                  alt="image"
+                  class="w-full rounded-full"
+                />
+                <span class="absolute top-0 left-0 z-[-1]">
+                  
+                </span>
+                <span class="absolute right-0 bottom-0">
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21.5 21.5L0.505701 21.5C0.767606 10.023 10.023 0.767604 21.5 0.505697L21.5 21.5Z"
+                      stroke="#13C296"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div class="text-center">
+                <h4 class="mb-2 text-lg font-medium text-dark">
+                  Ermeson Jesus
+                </h4>
+                <p class="mb-5 text-sm font-medium text-body-color">
+              Analista
+                </p>
+                <div class="flex items-center justify-center">
+                  <a
+                    href="javascript:void(0)"
+                    class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
+                  >
+                    <svg
+                      width="10"
+                      height="18"
+                      viewBox="0 0 10 18"
+                      class="fill-current"
+                    >
+                      <path
+                        d="M9.29878 7.2H7.74898H7.19548V6.61935V4.81936V4.23871H7.74898H8.91133C9.21575 4.23871 9.46483 4.00645 9.46483 3.65806V0.580645C9.46483 0.26129 9.24343 0 8.91133 0H6.89106C4.70474 0 3.18262 1.62581 3.18262 4.03548V6.56129V7.14194H2.62912H0.747223C0.359774 7.14194 0 7.46129 0 7.92581V10.0161C0 10.4226 0.304424 10.8 0.747223 10.8H2.57377H3.12727V11.3806V17.2161C3.12727 17.6226 3.43169 18 3.87449 18H6.47593C6.64198 18 6.78036 17.9129 6.89106 17.7968C7.00176 17.6806 7.08478 17.4774 7.08478 17.3032V11.4097V10.829H7.66596H8.91133C9.2711 10.829 9.54785 10.5968 9.6032 10.2484V10.2194V10.1903L9.99065 8.1871C10.0183 7.98387 9.99065 7.75161 9.8246 7.51935C9.76925 7.37419 9.52018 7.22903 9.29878 7.2Z"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
+                  >
+                    <svg
+                      width="18"
+                      height="14"
+                      viewBox="0 0 18 14"
+                      class="fill-current"
+                    >
+                      <path
+                        d="M15.9968 2.41096L17.1 1.09589C17.4194 0.739726 17.5065 0.465753 17.5355 0.328767C16.6645 0.821918 15.8516 0.986301 15.329 0.986301H15.1258L15.0097 0.876712C14.3129 0.30137 13.4419 0 12.5129 0C10.4806 0 8.88387 1.58904 8.88387 3.42466C8.88387 3.53425 8.88387 3.69863 8.9129 3.80822L9 4.35616L8.39032 4.32877C4.67419 4.21918 1.62581 1.20548 1.13226 0.684932C0.319355 2.05479 0.783871 3.36986 1.27742 4.19178L2.26452 5.72603L0.696774 4.90411C0.725806 6.05479 1.19032 6.9589 2.09032 7.61644L2.87419 8.16438L2.09032 8.46575C2.58387 9.86301 3.6871 10.4384 4.5 10.6575L5.57419 10.9315L4.55806 11.589C2.93226 12.6849 0.9 12.6027 0 12.5205C1.82903 13.726 4.00645 14 5.51613 14C6.64839 14 7.49032 13.8904 7.69355 13.8082C15.8226 12 16.2 5.15068 16.2 3.78082V3.58904L16.3742 3.47945C17.3613 2.60274 17.7677 2.13699 18 1.86301C17.9129 1.89041 17.7968 1.94521 17.6806 1.9726L15.9968 2.41096Z"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
+                  >
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      class="fill-current"
+                    >
+                      <path
+                        d="M8.90245 12.1939C10.7363 12.1939 12.2229 10.7073 12.2229 8.87352C12.2229 7.0397 10.7363 5.5531 8.90245 5.5531C7.06863 5.5531 5.58203 7.0397 5.58203 8.87352C5.58203 10.7073 7.06863 12.1939 8.90245 12.1939Z"
+                      />
+                      <path
+                        d="M12.5088 0H5.23824C2.34719 0 0 2.34719 0 5.23824V12.4516C0 15.3999 2.34719 17.7471 5.23824 17.7471H12.4516C15.3999 17.7471 17.7471 15.3999 17.7471 12.5088V5.23824C17.7471 2.34719 15.3999 0 12.5088 0ZM8.90215 13.2244C6.46909 13.2244 4.55126 11.2493 4.55126 8.87353C4.55126 6.49771 6.49771 4.52264 8.90215 4.52264C11.278 4.52264 13.2244 6.49771 13.2244 8.87353C13.2244 11.2493 11.3066 13.2244 8.90215 13.2244ZM14.9133 4.92338C14.627 5.23824 14.1976 5.40999 13.711 5.40999C13.2817 5.40999 12.8523 5.23824 12.5088 4.92338C12.1939 4.60851 12.0222 4.20777 12.0222 3.72116C12.0222 3.23454 12.1939 2.86243 12.5088 2.51894C12.8237 2.17545 13.2244 2.0037 13.711 2.0037C14.1404 2.0037 14.5984 2.17545 14.9133 2.49031C15.1995 2.86243 15.3999 3.29179 15.3999 3.74978C15.3712 4.20777 15.1995 4.60851 14.9133 4.92338Z"
+                      />
+                      <path
+                        d="M13.7397 3.03418C13.3676 3.03418 13.0527 3.34905 13.0527 3.72116C13.0527 4.09328 13.3676 4.40815 13.7397 4.40815C14.1118 4.40815 14.4267 4.09328 14.4267 3.72116C14.4267 3.34905 14.1405 3.03418 13.7397 3.03418Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Team Section End -->
+
+    <!-- ====== Contact Start ====== -->
+    <section id="contact" class="relative py-20 md:py-[120px]">
+      <div
+        class="absolute top-0 left-0 z-[-1] h-1/2 w-full bg-[#f3f4fe] lg:h-[45%] xl:h-1/2"
+      ></div>
+      <div class="container px-4">
+        <div class="-mx-4 flex flex-wrap items-center">
+          <div class="w-full px-4 lg:w-7/12 xl:w-8/12">
+            <div class="ud-contact-content-wrapper">
+              <div class="ud-contact-title mb-12 lg:mb-[150px]">
+                <span class="mb-5 text-base font-semibold text-dark">
+                 Contato
+                </span>
+                <h2 class="text-[35px] font-semibold">
+                  Tire Sua Dúvidas Aqui!
+                </h2>
+              </div>
+              <div class="mb-12 flex flex-wrap justify-between lg:mb-0">
+                <div class="mb-8 flex w-[330px] max-w-full">
+                  <div class="mr-6 text-[32px] text-primary">
+                   
+                  </div>
+                 
+                </div>
+                <div class="mb-8 flex w-[330px] max-w-full">
+                  <div class="mr-6 text-[32px] text-primary">
+                    <svg
+                      width="34"
+                      height="25"
+                      viewBox="0 0 34 25"
+                      class="fill-current"
+                    >
+                      <path
+                        d="M30.5156 0.960938H3.17188C1.42188 0.960938 0 2.38281 0 4.13281V20.9219C0 22.6719 1.42188 24.0938 3.17188 24.0938H30.5156C32.2656 24.0938 33.6875 22.6719 33.6875 20.9219V4.13281C33.6875 2.38281 32.2656 0.960938 30.5156 0.960938ZM30.5156 2.875C30.7891 2.875 31.0078 2.92969 31.2266 3.09375L17.6094 11.3516C17.1172 11.625 16.5703 11.625 16.0781 11.3516L2.46094 3.09375C2.67969 2.98438 2.89844 2.875 3.17188 2.875H30.5156ZM30.5156 22.125H3.17188C2.51562 22.125 1.91406 21.5781 1.91406 20.8672V5.00781L15.0391 12.9922C15.5859 13.3203 16.1875 13.4844 16.7891 13.4844C17.3906 13.4844 17.9922 13.3203 18.5391 12.9922L31.6641 5.00781V20.8672C31.7734 21.5781 31.1719 22.125 30.5156 22.125Z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h5 class="mb-6 text-lg font-semibold">Nossos Emails:</h5>
+                    <p class="text-base text-body-color">plataformcursos@gmail.com</p>
+                    <p class="text-base text-body-color">
+                     suporte@plataformcursos.com
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 lg:w-5/12 xl:w-4/12">
+            <div
+              class="wow fadeInUp rounded-lg bg-white py-10 px-8 shadow-testimonial sm:py-12 sm:px-10 md:p-[60px] lg:p-10 lg:py-12 lg:px-10 2xl:p-[60px]"
+              data-wow-delay=".2s
+              "
+            >
+              <h3 class="mb-8 text-2xl font-semibold md:text-[26px]">
+                Envie-nos Sua Mensagem
+              </h3>
+              <form>
+                <div class="mb-6">
+                  <label for="fullName" class="block text-xs text-dark"
+                    >Nome Completo *</label
+                  >
+                  <input
+                    type="text"
+                    name="fullName"
+                    placeholder="João Vitor Alves"
+                    class="w-full border-0 border-b border-[#f1f1f1] py-4 focus:border-primary focus:outline-none"
+                  />
+                </div>
+                <div class="mb-6">
+                  <label for="email" class="block text-xs text-dark"
+                    >Email*</label
+                  >
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="exemplo@email.com"
+                    class="w-full border-0 border-b border-[#f1f1f1] py-4 focus:border-primary focus:outline-none"
+                  />
+                </div>
+                <div class="mb-6">
+                  <label for="phone" class="block text-xs text-dark"
+                    >Contato(Whatsapp) *</label
+                  >
+                  <input
+                    type="text"
+                    name="phone"
+                    placeholder="11 9 9999 9999"
+                    class="w-full border-0 border-b border-[#f1f1f1] py-4 focus:border-primary focus:outline-none"
+                  />
+                </div>
+                <div class="mb-6">
+                  <label for="message" class="block text-xs text-dark"
+                    >Sua Mensagem *</label
+                  >
+                  <textarea
+                    name="message"
+                    rows="1"
+                    placeholder="O Que Deseja?"
+                    class="w-full resize-none border-0 border-b border-[#f1f1f1] py-4 focus:border-primary focus:outline-none"
+                  ></textarea>
+                </div>
+                <div class="mb-0">
+                  <button
+                    type="submit"
+                    class="inline-flex items-center justify-center rounded bg-primary py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-dark"
+                  >
+                   Enviar Mensagem
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Contact End ====== -->
+
+    <!-- ====== Footer Section Start -->
+    <footer
+      class="wow fadeInUp relative z-10 bg-black pt-20 lg:pt-[120px]"
+      data-wow-delay=".15s"
+    >
+    
+      
+
+      <div class="mt-12 border-t border-opacity-40 py-8 lg:mt-[60px]">
+        <div class="container">
+          <div class="-mx-4 flex flex-wrap">
+            <div class="w-full px-4 md:w-2/3 lg:w-1/2">
+              <div class="my-1">
+                <div
+                  class="-mx-3 flex items-center justify-center md:justify-start"
+                >
+                  <a
+                    href="javascript:void(0)"
+                    class="px-3 text-base text-[#f3f4fe] hover:text-primary"
+                  >
+                   Politicas de Privacidade
+                  </a>
+                  
+                  <a
+                    href="javascript:void(0)"
+                    class="px-3 text-base text-[#f3f4fe] hover:text-primary"
+                  >
+                  Termos de serviço
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="w-full px-4 md:w-1/3 lg:w-1/2">
+              <div class="my-1 flex justify-center md:justify-end">
+                <p class="text-base text-[#f3f4fe]">
+                 Desenvolvido Por
+                  <a
+                    href="https://instagram.com/jvitorafb"
+                    rel="nofollow noopner"
+                    target="_blank"
+                    class="text-primary hover:underline"
+                  >
+                  João Vitor
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+       
+
+       
+
+             </span>
+      </div>
+    </footer>
+    
+    <a
+      href="javascript:void(0)"
+      class="back-to-top fixed bottom-8 right-8 left-auto z-[999] hidden h-10 w-10 items-center justify-center rounded-md bg-primary text-white shadow-md transition duration-300 ease-in-out hover:bg-dark"
+    >
+      <span
+        class="mt-[6px] h-3 w-3 rotate-45 border-t border-l border-white"
+      ></span>
+    </a>
+    <!-- ====== Back To Top End -->
+
+    <!-- ====== All Scripts -->
+<script src="back-end/firebase.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+    <script>
+      // ==== for menu scroll
+      const pageLink = document.querySelectorAll(".ud-menu-scroll");
+
+      pageLink.forEach((elem) => {
+        elem.addEventListener("click", (e) => {
+          e.preventDefault();
+          document.querySelector(elem.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+            offsetTop: 1 - 60,
+          });
+        });
+      });
+
+      // section menu active
+      function onScroll(event) {
+        const sections = document.querySelectorAll(".ud-menu-scroll");
+        const scrollPos =
+          window.pageYOffset ||
+          document.documentElement.scrollTop ||
+          document.body.scrollTop;
+
+        for (let i = 0; i < sections.length; i++) {
+          const currLink = sections[i];
+          const val = currLink.getAttribute("href");
+          const refElement = document.querySelector(val);
+          const scrollTopMinus = scrollPos + 73;
+          if (
+            refElement.offsetTop <= scrollTopMinus &&
+            refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
+          ) {
+            document
+              .querySelector(".ud-menu-scroll")
+              .classList.remove("active");
+            currLink.classList.add("active");
+          } else {
+            currLink.classList.remove("active");
+          }
+        }
+      }
+
+      window.document.addEventListener("scroll", onScroll);
+    </script>
+     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+     <script>
+
+      firebase.initializeApp({
+        authDomain: "plataformacursos-ebc63.firebaseapp.com",
+        projectId: "plataformacursos-ebc63",
+        storageBucket: "plataformacursos-ebc63.appspot.com",
+        messagingSenderId: "765909255475",
+        appId: "1:765909255475:web:91b677dcecd0ca58556a46",
+        measurementId: "G-313E4KE5T8"
+      });
+
+      var db = firebase.firestore();
+  </script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/infor.js"></script>
+  </body>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+   ScrollReveal().reveal('.container');
+  </script>
+</html>

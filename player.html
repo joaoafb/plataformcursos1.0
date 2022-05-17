@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+   <link rel="stylesheet" href="assets/css/player.css">
+    <!-- ==== WOW JS ==== -->
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </head>
+  <style>
+     
+  </style>
+  <body>
+
+
+
+    <section>
+
+       <div class="box" style="display: flex;flex-direction: row;align-items: center;">
+           
+            <h1 class="modulo"  id="modulo"></h1>
+            <h2 class="title" id="title"></h2>
+            <div class="divmodo">
+              <i alt="Ativar Modo Noturno" style="zoom:150% ;cursor: pointer;" id="iconmodo" onclick="modonoite()" class="fas fa-moon"></i>
+            </div>
+            
+            
+    
+       
+
+       </div>
+      <div class="container">
+          <div id="video_player">
+           
+              <video controls  id="main-Video" class="video-js"  poster="assets/images/banner.png" src=""></video>
+          </div>
+          <div class="playlistBx">
+              <div class="header">
+                  <div class="row">
+                      <span class="AllLessons"></span>
+                  </div>
+              </div>
+              <ul class="playlist" id="playlist">
+              </ul>
+          </div>
+      </div>
+      
+  </section>
+<div class="descricao">
+  <label for="">Descrição:</label>
+  <span id="descricao">dsdsdsdsds</span>
+</div>
+  </body>
+
+<script>
+setInterval(() => {
+   document.title = document.querySelector(".title").textContent + " | Plataform Cursos"
+}, 100);
+
+</script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="assets/js/content.js"></script>
+<script src="https://kit.fontawesome.com/1b780029f6.js" crossorigin="anonymous"></script>
+<script src="assets/js/player.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script></script>
+
+<script>
+
+ firebase.initializeApp({
+   authDomain: "plataformacursos-ebc63.firebaseapp.com",
+   projectId: "plataformacursos-ebc63",
+   storageBucket: "plataformacursos-ebc63.appspot.com",
+   messagingSenderId: "765909255475",
+   appId: "1:765909255475:web:91b677dcecd0ca58556a46",
+   measurementId: "G-313E4KE5T8"
+ });
+
+
+ var db = firebase.firestore();
+ 
+  var docRef = db.collection("cursos").doc("DROPGRINGOMODULO1AULA1");
+     docRef.get().then((doc) => {
+     if (doc.exists) {
+        document.getElementById("modulo").innerHTML = "Módulo: "  + doc.data().Modulo
+        localStorage.setItem("modulo", "Módulo: " + doc.data().Modulo)
+      localStorage.setItem("nomevideo", doc.data().Nome)
+      localStorage.setItem("nomevideo2", doc.data().Nome)
+
+      localStorage.setItem("urlvideo", doc.data().url)
+      localStorage.setItem("urlvideo2", doc.data().url)
+      
+         console.log(  doc.data().Nome + doc.data().url)
+     } else {
+         // doc.data() will be undefined in this case
+         console.log("No such document!");
+     }
+ }).catch((error) => {
+     console.log("Error getting document:", error);
+ });
+</script>
+</html>

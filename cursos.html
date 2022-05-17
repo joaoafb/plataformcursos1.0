@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cursos</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+
+    <!-- ==== WOW JS ==== -->
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </head>
+  <body>
+    <!-- ====== Navbar Section Start -->
+    <div
+      class="ud-header absolute top-0 left-0 z-40 flex w-full items-center bg-transparent"
+    >
+      <div class="container">
+        <div class="relative -mx-4 flex items-center justify-between">
+          <div class="w-60 max-w-full px-4">
+            <a href="index.html" class="navbar-logo block w-full py-5">
+              <img
+                style="width: 70px;"
+                src="assets/images/logo/logo.png"
+                alt="logo"
+                class="header-logo w-full"
+              />
+            </a>
+          </div>
+          <div class="flex w-full items-center justify-between px-4">
+            <div>
+              <button
+                id="navbarToggler"
+                class="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
+              >
+                <span
+                  class="relative my-[6px] block h-[2px] w-[30px] bg-white"
+                ></span>
+                <span
+                  class="relative my-[6px] block h-[2px] w-[30px] bg-white"
+                ></span>
+                <span
+                  class="relative my-[6px] block h-[2px] w-[30px] bg-white"
+                ></span>
+              </button>
+              <nav
+                id="navbarCollapse"
+                class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:px-4 lg:shadow-none xl:px-6"
+              >
+                <ul class="blcok lg:flex">
+                  <li class="group relative">
+                    <a
+                      href="index.html"
+                      class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70"
+                    >
+                      Home
+                    </a>
+                  </li>
+                 
+                  <li class="group relative">
+                    <a
+                      href="#pricing"
+                      class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
+                    >
+                      Planos
+                    </a>
+                  </li>
+                 
+                  <li class="group relative">
+                    <a
+                      href="#contact"
+                      class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
+                    >
+                      Contato
+                    </a>
+                  </li>
+                  <li class="submenu-item group relative">
+                    <a
+                      href="javascript:void(0)"
+                      class="relative mx-8 flex py-2 text-base text-dark after:absolute after:right-1 after:top-1/2 after:mt-[-2px] after:h-2 after:w-2 after:-translate-y-1/2 after:rotate-45 after:border-b-2 after:border-r-2 after:border-current group-hover:text-primary lg:mr-0 lg:ml-8 lg:inline-flex lg:py-6 lg:pl-0 lg:pr-4 lg:text-white lg:after:right-0 lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
+                    >
+                      Categorias
+                    </a>
+                    <div
+                      class="submenu relative top-full left-0 hidden w-[250px] rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full"
+                    >
+                      <a
+                        href=""
+                        class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
+                      >
+                       Administração
+                      </a>
+                      <a
+                        href=""
+                        class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
+                      >
+                       Afiliados
+                      </a>
+                      <a
+                        href=""
+                        class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
+                      >
+                       Animação
+                      </a>
+                      <a
+                        href=""
+                        class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
+                      >
+                       Aplicativos
+                      </a>
+                      <a
+                        href=""
+                        class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
+                      >
+                      Apostas
+                      </a>
+                      <a
+                        href=""
+                        class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
+                      >
+                        Apostilas
+                      </a>
+                      <a
+                        href=""
+                        class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
+                      >
+                       Arquitetura
+                      </a>
+                      <a
+                        href=""
+                        class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
+                      >
+                      Banco de Dados
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="hidden justify-end pr-16 sm:flex lg:pr-0">
+              <a
+                href="signin.html"
+                class="loginBtn py-3 px-7 text-base font-medium text-white hover:opacity-70"
+              >
+                Login
+              </a>
+              <a
+                href="signup.html"
+                class="signUpBtn rounded-lg bg-white bg-opacity-20 py-3 px-6 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark"
+              >
+               Cadastro
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <!-- ====== Navbar Section End -->
+
+    <!-- ====== Banner Section Start -->
+    <div
+      class="relative z-10 overflow-hidden bg-primary pt-[120px] pb-[100px] md:pt-[130px] lg:pt-[160px]"
+    >
+      <div class="container">
+        <div class="-mx-4 flex flex-wrap items-center">
+          <div class="w-full px-4">
+            <div class="text-center">
+              <h1 class="text-4xl font-semibold text-white">Cursos</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <span class="absolute top-0 left-0 z-[-1]">
+          <svg
+            width="495"
+            height="470"
+            viewBox="0 0 495 470"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="55"
+              cy="442"
+              r="138"
+              stroke="white"
+              stroke-opacity="0.04"
+              stroke-width="50"
+            />
+            <circle
+              cx="446"
+              r="39"
+              stroke="white"
+              stroke-opacity="0.04"
+              stroke-width="20"
+            />
+            <path
+              d="M245.406 137.609L233.985 94.9852L276.609 106.406L245.406 137.609Z"
+              stroke="white"
+              stroke-opacity="0.08"
+              stroke-width="12"
+            />
+          </svg>
+        </span>
+        <span class="absolute top-0 right-0 z-[-1]">
+          <svg
+            width="493"
+            height="470"
+            viewBox="0 0 493 470"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="462"
+              cy="5"
+              r="138"
+              stroke="white"
+              stroke-opacity="0.04"
+              stroke-width="50"
+            />
+            <circle
+              cx="49"
+              cy="470"
+              r="39"
+              stroke="white"
+              stroke-opacity="0.04"
+              stroke-width="20"
+            />
+            <path
+              d="M222.393 226.701L272.808 213.192L259.299 263.607L222.393 226.701Z"
+              stroke="white"
+              stroke-opacity="0.06"
+              stroke-width="13"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+    <!-- ====== Banner Section End -->
+
+    <!-- ====== Blog Section Start -->
+    <section class="pt-20 pb-10 lg:pt-[120px] lg:pb-20">
+      <div class="container">
+        <div class="-mx-4 flex flex-wrap">
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="wow fadeInUp group mb-10" data-wow-delay=".1s">
+              <div class="mb-8 overflow-hidden rounded">
+                <a href="detalhes.html" class="block">
+                  <img
+                    src="https://downloadcursos.top/wp-content/uploads/2022/05/o-script-de-prospectar-clientes.jpg.webp"
+                    alt="image"
+                    class="w-full transition group-hover:rotate-6 group-hover:scale-125"
+                  />
+                </a>
+              </div>
+              <div>
+                <span
+                  class="mb-5 inline-block rounded bg-primary py-1 px-4 text-center text-xs font-semibold leading-loose text-white"
+                >
+                 Marketing
+                </span>
+                <h3>
+                  <a
+                    href="detalhes.html"
+                    class="mb-4 inline-block text-xl font-semibold text-dark hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
+                  >
+                  O Script Como Prospectar Clientes
+                  </a>
+                </h3>
+                <p class="text-base text-body-color">
+                  Aqui Rodrigo Oliveira mostra em seus módulos como você pode sair do 0 para a prospecção perfeita de clientes. Existe …
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="wow fadeInUp group mb-10" data-wow-delay=".15s">
+              <div class="mb-8 overflow-hidden rounded">
+                <a href="detalhes.html" class="block">
+                  <img
+                    src="https://downloadcursos.top/wp-content/uploads/2022/05/potencia-absoluta.jpg.webp"
+                    alt="image"
+                    class="w-full transition group-hover:rotate-6 group-hover:scale-125"
+                  />
+                </a>
+              </div>
+              <div>
+                <span
+                  class="mb-5 inline-block rounded bg-primary py-1 px-4 text-center text-xs font-semibold leading-loose text-white"
+                >
+                 Desenvolvimento Pessoal
+                </span>
+                <h3>
+                  <a
+                    href="detalhes.html"
+                    class="mb-4 inline-block text-xl font-semibold text-dark hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
+                  >
+                  Potência Absoluta
+                  </a>
+                </h3>
+                <p class="text-base text-body-color">
+                  O Treinamento Potência Absoluta é mais um conteúdo exclusivo do Potencial Masculino. Neste curso, o Davi Ribeiro, especialista em sexualidade …
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="wow fadeInUp group mb-10" data-wow-delay=".2s">
+              <div class="mb-8 overflow-hidden rounded">
+                <a href="detalhes.html" class="block">
+                  <img
+                    src="https://downloadcursos.top/wp-content/uploads/2022/05/web-hacking-teste-de-invasao.jpg.webp"
+                    alt="image"
+                    class="w-full transition group-hover:rotate-6 group-hover:scale-125"
+                  />
+                </a>
+              </div>
+              <div>
+                <span
+                  class="mb-5 inline-block rounded bg-primary py-1 px-4 text-center text-xs font-semibold leading-loose text-white"
+                >
+                 Hacker
+                </span>
+                <h3>
+                  <a
+                    href="detalhes.html"
+                    class="mb-4 inline-block text-xl font-semibold text-dark hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
+                  >
+                  Web Hacking Teste de Invasão em Sites e Aplicações Web
+                  </a>
+                </h3>
+                <p class="text-base text-body-color">
+                  Totalmente focado em iniciantes no mundo de Hacking: Isso mesmo, apesar de ter alguns conhecimentos básicos necessários para entender tudo …
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="wow fadeInUp group mb-10" data-wow-delay=".1s">
+              <div class="mb-8 overflow-hidden rounded">
+                <a href="detalhes.html" class="block">
+                  <img
+                    src="https://downloadcursos.top/wp-content/uploads/2022/05/criadores-21.jpg.webp"
+                    alt="image"
+                    class="w-full transition group-hover:rotate-6 group-hover:scale-125"
+                  />
+                </a>
+              </div>
+              <div>
+                <span
+                  class="mb-5 inline-block rounded bg-primary py-1 px-4 text-center text-xs font-semibold leading-loose text-white"
+                >
+                  Marketing
+                </span>
+                <h3>
+                  <a
+                    href="detalhes.html"
+                    class="mb-4 inline-block text-xl font-semibold text-dark hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
+                  >
+                  Criadores 21
+                  </a>
+                </h3>
+                <p class="text-base text-body-color">
+                  Uma comunidade para espíritos criativos e empreendedores que querem criar coisas que moldam a cultura e espalhar sua mensagem pelo …
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="wow fadeInUp group mb-10" data-wow-delay=".15s">
+              <div class="mb-8 overflow-hidden rounded">
+                <a href="detalhes.html" class="block">
+                  <img
+                    src="https://downloadcursos.top/wp-content/uploads/2022/05/deepweb-do-drop-20.jpg.webp"
+                    alt="image"
+                    class="w-full transition group-hover:rotate-6 group-hover:scale-125"
+                  />
+                </a>
+              </div>
+              <div>
+                <span
+                  class="mb-5 inline-block rounded bg-primary py-1 px-4 text-center text-xs font-semibold leading-loose text-white"
+                >
+                 Droppshinping
+                </span>
+                <h3>
+                  <a
+                    href="detalhes.html"
+                    class="mb-4 inline-block text-xl font-semibold text-dark hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
+                  >
+                  Deepweb do Drop 2.0
+                  </a>
+                </h3>
+                <p class="text-base text-body-color">
+                  A Deepweb do Drop é uma compilação de estratégias e hacks para atingir os maiores e melhores resultados em suas …
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="wow fadeInUp group mb-10" data-wow-delay=".2s">
+              <div class="mb-8 overflow-hidden rounded">
+                <a href="detalhes.html" class="block">
+                  <img
+                    src="https://downloadcursos.top/wp-content/uploads/2022/05/psvk-seguranca-da-informacao.jpg.webp"
+                    alt="image"
+                    class="w-full transition group-hover:rotate-6 group-hover:scale-125"
+                  />
+                </a>
+              </div>
+              <div>
+                <span
+                  class="mb-5 inline-block rounded bg-primary py-1 px-4 text-center text-xs font-semibold leading-loose text-white"
+                >
+                 Hacker
+                </span>
+                <h3>
+                  <a
+                    href="detalhes.html"
+                    class="mb-4 inline-block text-xl font-semibold text-dark hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
+                  >
+                  Pack Segurança Da Informação
+                  </a>
+                </h3>
+                <p class="text-base text-body-color">
+                  Segurança da Informação e Hacking 1 Segurança da Informação e Hacking 2 25 Ferramentas para PenTest
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="wow fadeInUp group mb-10" data-wow-delay=".1s">
+              <div class="mb-8 overflow-hidden rounded">
+                <a href="detalhes.html" class="block">
+                  <img
+                    src="https://downloadcursos.top/wp-content/uploads/2022/05/iniciando-sua-jornada-no-c.jpg.webp"
+                    alt="image"
+                    class="w-full transition group-hover:rotate-6 group-hover:scale-125"
+                  />
+                </a>
+              </div>
+              <div>
+                <span
+                  class="mb-5 inline-block rounded bg-primary py-1 px-4 text-center text-xs font-semibold leading-loose text-white"
+                >
+                 Programação
+                </span>
+                <h3>
+                  <a
+                    href="detalhes.html"
+                    class="mb-4 inline-block text-xl font-semibold text-dark hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
+                  >
+                   Iniciando sua Jornada no C++
+                  </a>
+                </h3>
+                <p class="text-base text-body-color">
+                  O curso de Iniciando sua Jornada no C++ é destinado as pessoas que buscam aprender sobre o tema, mas não …
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="wow fadeInUp group mb-10" data-wow-delay=".15s">
+              <div class="mb-8 overflow-hidden rounded">
+                <a href="detalhes.html" class="block">
+                  <img
+                    src="https://downloadcursos.top/wp-content/uploads/2022/05/o-novo-dropshipping.jpg.webp"
+                    alt="image"
+                    class="w-full transition group-hover:rotate-6 group-hover:scale-125"
+                  />
+                </a>
+              </div>
+              <div>
+                <span
+                  class="mb-5 inline-block rounded bg-primary py-1 px-4 text-center text-xs font-semibold leading-loose text-white"
+                >
+                  Droppshiping
+                </span>
+                <h3>
+                  <a
+                    href="detalhes.html"
+                    class="mb-4 inline-block text-xl font-semibold text-dark hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
+                  >
+                  O Novo Dropshipping 2.0
+                  </a>
+                </h3>
+                <p class="text-base text-body-color">
+                  ﻿O Novo Dropshipping de Iagor Gonçalves, um curso feito com base nas estratégias e métodos recolhidos e partilhados pelo autor …
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="wow fadeInUp group mb-10" data-wow-delay=".2s">
+              <div class="mb-8 overflow-hidden rounded">
+                <a href="detalhes.html" class="block">
+                  <img
+                    src="https://downloadcursos.top/wp-content/uploads/2022/05/harmonia-do-caos.jpg.webp"
+                    alt="image"
+                    class="w-full transition group-hover:rotate-6 group-hover:scale-125"
+                  />
+                </a>
+              </div>
+              <div>
+                <span
+                  class="mb-5 inline-block rounded bg-primary py-1 px-4 text-center text-xs font-semibold leading-loose text-white"
+                >
+                 Programação
+                </span>
+                <h3>
+                  <a
+                    href="detalhes.html"
+                    class="mb-4 inline-block text-xl font-semibold text-dark hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
+                  >
+                  Visual Studio Code: Produtividade Absoluta
+                  </a>
+                </h3>
+                <p class="text-base text-body-color">
+                  Visual Studio Code é um dos editores de código mais utilizados pelos programadores. Isso se deve ao fato de suas …
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Blog Section End -->
+
+    <!-- ====== Footer Section Start -->
+    <footer
+      class="wow fadeInUp relative z-10 bg-black pt-20 lg:pt-[120px]"
+      data-wow-delay=".15s"
+    >
+    
+      
+
+      <div class="mt-12 border-t border-opacity-40 py-8 lg:mt-[60px]">
+        <div class="container">
+          <div class="-mx-4 flex flex-wrap">
+            <div class="w-full px-4 md:w-2/3 lg:w-1/2">
+              <div class="my-1">
+                <div
+                  class="-mx-3 flex items-center justify-center md:justify-start"
+                >
+                  <a
+                    href="javascript:void(0)"
+                    class="px-3 text-base text-[#f3f4fe] hover:text-primary"
+                  >
+                   Politicas de Privacidade
+                  </a>
+                  
+                  <a
+                    href="javascript:void(0)"
+                    class="px-3 text-base text-[#f3f4fe] hover:text-primary"
+                  >
+                  Termos de serviço
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="w-full px-4 md:w-1/3 lg:w-1/2">
+              <div class="my-1 flex justify-center md:justify-end">
+                <p class="text-base text-[#f3f4fe]">
+                 Desenvolvido Por
+                  <a
+                    href="https://instagram.com/jvitorafb"
+                    rel="nofollow noopner"
+                    target="_blank"
+                    class="text-primary hover:underline"
+                  >
+                  João Vitor
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+       
+
+       
+
+             </span>
+      </div>
+    </footer>
+    <!-- ====== Footer Section End -->
+
+    <!-- ====== Back To Top Start -->
+    <a
+      href="javascript:void(0)"
+      class="back-to-top fixed bottom-8 right-8 left-auto z-[999] hidden h-10 w-10 items-center justify-center rounded-md bg-primary text-white shadow-md transition duration-300 ease-in-out hover:bg-dark"
+    >
+      <span
+        class="mt-[6px] h-3 w-3 rotate-45 border-t border-l border-white"
+      ></span>
+    </a>
+    <!-- ====== Back To Top End -->
+
+    <!-- ====== All Scripts -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
